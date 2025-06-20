@@ -1,3 +1,29 @@
-h1 {
+/* htmlデフォルトの余白を削除 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
     text-align: center;
+    background-color: rgb(175, 175, 175);
+    padding: 9px;
+    margin: 0;
+}
+
+.slideshow img{
+    width: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.guide {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.guzai img {
+    width: 70px;
 }
