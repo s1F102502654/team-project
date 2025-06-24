@@ -74,6 +74,10 @@ header h1 {
 /* メニュー画面 */
 #menu {
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
     z-index: 150;
     top: 0px;
     width: 100%;
@@ -90,7 +94,7 @@ header h1 {
 #menu ul {
     list-style: none;
     text-align: center;
-    margin: 100px 0;
+    margin: 0;
     padding: 0;
 }
 
