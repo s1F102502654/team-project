@@ -3,19 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/kelp.css">
-    <title>Kelp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>昆布の魅力</title>
+    <link rel="stylesheet" href="kelp.css">
 </head>
 
-<body>
-    <h1>昆布</h1>
-    <!--画像をつける-->
-    <img src="img\kelp_onigiri.png" alt="昆布のおにぎり">
-    <h2>昆布の魅力</h2>
-    <p>噛むほどに味わいが広がる、昆布おにぎり。昆布の甘辛煮がごはんの旨味を引き立て、老若男女に愛される定番の一品です。
-    </p>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full text-center">
+        <!-- メインタイトル：昆布 -->
+        <h1 class="text-4xl font-bold text-gray-800 mb-4 rounded-md">昆布</h1>
 
-    <!--それぞれの具の写真とサイトへのリンクを貼る-->
+        <!-- 昆布おにぎりの画像 -->
+        <!-- ローカルファイルへのパスは直接参照できないため、プレースホルダー画像を使用している。 -->
+        <img src="img/kelp_onigiri.png" alt="昆布のおにぎり" class="mx-auto my-4 rounded-lg shadow-md w-full max-w-sm">
+
+        <!-- 昆布の魅力セクション -->
+        <h2 class="text-2xl font-semibold text-gray-700 mb-2 rounded-md">昆布の魅力</h2>
+        <p class="text-lg text-gray-600 mb-6 rounded-md">噛むほどに味わいが広がる、昆布おにぎり。昆布の甘辛煮がごはんの旨味を引き立て、老若男女に愛される定番の一品である。</p>
+
+        <!-- 昆布の種類セクション -->
+        <h2 class="text-2xl font-semibold text-gray-700 mt-8 mb-4 rounded-md">昆布の種類</h2>
+        <div class="text-left text-gray-600 mb-6">
+            <p class="mb-2"><span class="font-bold">真昆布：</span>上品な甘みとコクがあり、出汁昆布として最高級とされている。</p>
+            <p class="mb-2"><span class="font-bold">利尻昆布：</span>透明で風味豊かな出汁がとれ、京料理によく使われる。</p>
+            <p class="mb-2"><span class="font-bold">羅臼昆布：</span>濃厚な出汁が特徴で、香り高く、鍋物や煮物に適している。</p>
+            <p><span class="font-bold">日高昆布：</span>柔らかく煮えやすく、煮物や佃煮によく使われる。</p>
+        </div>
+
+        <!-- 昆布の栄養セクション -->
+        <h2 class="text-2xl -semibold text-gray-700 mt-8 mb-4 rounded-md">昆布の栄養</h2>
+        <div class="text-left text-gray-600 mb-6">
+            <p class="mb-2">
+                昆布は、食物繊維、ミネラル（カルシウム、ヨウ素など）、ビタミンを豊富に含んでいる。特に水溶性食物繊維であるアルギン酸は、コレステロールの吸収を抑え、血糖値の上昇を緩やかにする効果が期待できる。</p>
+            <p>また、フコイダンという成分も含まれており、免疫力向上や抗酸化作用があると言われている。低カロリーでありながら栄養価が高く、健康維持に役立つ食材である。</p>
+        </div>
+    </div>
 </body>
 
 </html>
