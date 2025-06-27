@@ -5,39 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>昆布の魅力</title>
-    <link rel="stylesheet" href="kelp.css">
+    <!-- 作成したCSSファイルを読み込む -->
+    <link rel="stylesheet" type="text/css" href="css/kelp.css">
 </head>
 
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
-    <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full text-center">
-        <!-- メインタイトル：昆布 -->
-        <h1 class="text-4xl font-bold text-gray-800 mb-4 rounded-md">昆布</h1>
+<body>
 
-        <!-- 昆布おにぎりの画像 -->
-        <!-- ローカルファイルへのパスは直接参照できないため、プレースホルダー画像を使用している。 -->
-        <img src="img/kelp_onigiri.png" alt="昆布のおにぎり" class="mx-auto my-4 rounded-lg shadow-md w-full max-w-sm">
+    <div class="container">
+        <header class="site-header">
+            <h1>昆布の魅力</h1>
+            <p>日本の食文化を支える海の恵み</p>
+        </header>
 
-        <!-- 昆布の魅力セクション -->
-        <h2 class="text-2xl font-semibold text-gray-700 mb-2 rounded-md">昆布の魅力</h2>
-        <p class="text-lg text-gray-600 mb-6 rounded-md">噛むほどに味わいが広がる、昆布おにぎり。昆布の甘辛煮がごはんの旨味を引き立て、老若男女に愛される定番の一品である。</p>
+        <main class="content-card">
+            <!-- 上段セクション（画像と魅力） -->
+            <div class="card-flex-container">
+                <div class="card-image-wrapper">
+                    <img src="img/kelp_onigiri.png" alt="昆布のおにぎり"
+                        onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=画像読込エラー';">
+                </div>
 
-        <!-- 昆布の種類セクション -->
-        <h2 class="text-2xl font-semibold text-gray-700 mt-8 mb-4 rounded-md">昆布の種類</h2>
-        <div class="text-left text-gray-600 mb-6">
-            <p class="mb-2"><span class="font-bold">真昆布：</span>上品な甘みとコクがあり、出汁昆布として最高級とされている。</p>
-            <p class="mb-2"><span class="font-bold">利尻昆布：</span>透明で風味豊かな出汁がとれ、京料理によく使われる。</p>
-            <p class="mb-2"><span class="font-bold">羅臼昆布：</span>濃厚な出汁が特徴で、香り高く、鍋物や煮物に適している。</p>
-            <p><span class="font-bold">日高昆布：</span>柔らかく煮えやすく、煮物や佃煮によく使われる。</p>
-        </div>
+                <div class="card-text-content">
+                    <h2>噛むほどに広がる味わい</h2>
+                    <p>
+                        昆布おにぎりは、その代表例である。甘辛く煮付けられた昆布が、ごはん本来の旨味を最大限に引き立てる。シンプルながらも奥深い味わいは、世代を問わず多くの人々に愛され続ける、日本のソウルフードと言えるだろう。
+                    </p>
+                </div>
+            </div>
 
-        <!-- 昆布の栄養セクション -->
-        <h2 class="text-2xl -semibold text-gray-700 mt-8 mb-4 rounded-md">昆布の栄養</h2>
-        <div class="text-left text-gray-600 mb-6">
-            <p class="mb-2">
-                昆布は、食物繊維、ミネラル（カルシウム、ヨウ素など）、ビタミンを豊富に含んでいる。特に水溶性食物繊維であるアルギン酸は、コレステロールの吸収を抑え、血糖値の上昇を緩やかにする効果が期待できる。</p>
-            <p>また、フコイダンという成分も含まれており、免疫力向上や抗酸化作用があると言われている。低カロリーでありながら栄養価が高く、健康維持に役立つ食材である。</p>
-        </div>
+            <!-- 種類セクション -->
+            <section class="card-section">
+                <h2 class="section-title">昆布の種類</h2>
+                <div class="type-grid">
+                    <div class="type-item">
+                        <h3>真昆布</h3>
+                        <p>上品な甘みと澄んだ出汁が特徴。出汁昆布の最高級品として知られる。</p>
+                    </div>
+                    <div class="type-item">
+                        <h3>利尻昆布</h3>
+                        <p>風味が豊かで透明な出汁がとれるため、京料理などの繊細な味付けに重宝される。</p>
+                    </div>
+                    <div class="type-item">
+                        <h3>羅臼昆布</h3>
+                        <p>「昆布の王様」とも呼ばれる。濃厚で香り高い出汁は、鍋物や煮物に最適である。</p>
+                    </div>
+                    <div class="type-item">
+                        <h3>日高昆布</h3>
+                        <p>柔らかく煮えやすいため、昆布巻きや佃煮など、昆布そのものを食べる料理に向いている。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 栄養セクション -->
+            <section class="card-section-highlight">
+                <h2 class="section-title">秘められた栄養価</h2>
+                <div class="nutrition-content">
+                    <p>
+                        昆布は低カロリーでありながら、現代人に不足しがちな栄養素の宝庫である。特に、水溶性食物繊維の「アルギン酸」や「フコイダン」を豊富に含む。これらは、コレステロール値の改善や血糖値上昇の抑制、さらには免疫機能のサポートなど、多岐にわたる健康効果が期待されている。
+                    </p>
+                    <p>
+                        その他、骨や歯を丈夫にするカルシウム、代謝を促進するヨウ素といったミネラルも豊富に含んでおり、健康維持に欠かせない食材である。
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>@INIAD Team Exercise</p>
+        </footer>
     </div>
+
 </body>
 
 </html>
