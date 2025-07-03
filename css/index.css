@@ -61,15 +61,51 @@ body {
 }
 
 .link_block {
-    padding: 60px;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    background-color: aliceblue;
 }
 
-.link_block a {
+.link_block h2 {
+    padding-top: 10px;
+}
+
+.link_card {
+    display: flex;
+}
+
+.link_card a {
+    display: block;
     text-decoration: none;
-    color: #000;
-    background-color: blue;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.link_card a:hover {
+    cursor: pointer;
+}
+
+#salmon {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/salmon_image/salmon_image.png");
+}
+
+#salt {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/salt.png");
+}
+
+#tunamayo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/tunamayo.png");
+}
+
+#kelp {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/kelp_onigiri.png");
 }
 
 /* ハンバーガーボタンのスタイル */
