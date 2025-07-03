@@ -1,73 +1,84 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <title>おにぎり紹介</title>
-</head>
-<body>
-    <header>
-        <h1>おにぎりの具紹介</h1>
-    </header>
-    <button id="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="salmon.html">鮭</a></li>
-            <li><a href="salt.html">塩</a></li>
-            <li><a href="tunamayo.html">ツナマヨ</a></li>
-            <li><a href="kelp.html">昆布</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <!-- <div class="top-block">
-            <img src="img/32768537_s.jpg" alt="おにぎりの画像">
-        </div> -->
-        <div class="slideshow">
-            <!-- この中に画像を複数並べてスライドショーみたいに表示したい -->
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/okiba.css" type="text/css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="top">
+            <h1>握る<br />彩る<br />味わう</h1>
+            <img
+                src="img/onigiri_create.png"
+                alt="おにぎりがベルトコンベアーに流れながら作られる画像"
+            />
         </div>
-        <div class="intro">
-            <div class="content-bad">
-                <h3>こんなお悩みありませんか？</h3>
-                <div class="content-block">
+        <div class="container">
+            <h3>こんなお悩みありませんか</h3>
+            <div class="block">
+                <div class="card">
+                    <img src="img/cooking_onigiri_man_tebukuro.png" alt="" />
                     <h4>手軽に作りたい</h4>
+                    <p>朝の忙しいタイミングでは作る時間が足りない</p>
                 </div>
-                <div class="content-block">
+                <div class="card">
+                    <img src="img/cooking_onigiri_man_tebukuro.png" alt="" />
                     <h4>持ち運びが簡単なものを作りたい</h4>
+                    <p>たくさんの荷物を入れる鞄の中で大きなお弁当はかさばる</p>
                 </div>
-                <div class="content-block">
+                <div class="card">
+                    <img src="img/cooking_onigiri_man_tebukuro.png" alt="" />
                     <h4>栄養バランスを考えたい</h4>
+                    <p>健康に生活していくために栄養には気を使っていきたい</p>
                 </div>
-            </div>
-        <h2>具材</h2>
-        <div class="guide">
-            <div class="guzai">
-                <img src="img/cooking_onigiri_man_tebukuro.png" alt="写真">
-                <h3>鮭</h3>
-                <p><a href="salmon.html">鮭へのリンク</a></p>
-            </div>
-            <div class="guzai">
-                <img src="img/cooking_onigiri_man_tebukuro.png" alt="写真">
-                <h3>塩</h3>
-                <p><a href="salt.html">塩へのリンク</a></p>
-            </div>
-            <div class="guzai">
-                <img src="img/cooking_onigiri_man_tebukuro.png" alt="写真">
-                <h3>ツナマヨ</h3>
-                <p><a href="tunamayo.html">ツナマヨへのリンク</a></p>
-            </div>
-            <div class="guzai">
-                <img src="img/cooking_onigiri_man_tebukuro.png" alt="写真">
-                <h3>昆布</h3>
-                <p><a href="kelp.html">昆布へのリンク</a></p>
             </div>
         </div>
-    </main>
-    <script src="app.js"></script>
-</body>
+        <div class="container">
+            <h3>おにぎりなら</h3>
+            <div class="block">
+                <div class="card">
+                    <img src="img/cooking_onigiri_man_tebukuro.png" alt="" />
+                    <h4>炊いたご飯が、握るだけでごちそうに</h4>
+                    <p>
+                        炊いたご飯さえあればいつでもすぐに作れる。特別な調理器具も必要なし
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="img/cooking_onigiri_man_tebukuro.png" alt="" />
+                    <h4>どこでも片手でエネルギーチャージ</h4>
+                    <p>
+                        1つずつラップやアルミホイルに包むだけで鞄の中にコンパクトに収まる
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="img/cooking_onigiri_man_tebukuro.png" alt="" />
+                    <h4>手のひらサイズに、栄養バランスをにぎりこむ</h4>
+                    <p>ご飯を基本に具材を変えるだけで理想の栄養バランスに</p>
+                </div>
+            </div>
+        </div>
+        <div class="link_block">
+            <a id="salmon" href="salmon.html">鮭</a>
+            <a id="salt" href="salt.html">塩</a>
+            <a id="tunamayo" href="tunamayo.html">ツナマヨ</a>
+            <a id="kelp" href="kelp.html">昆布</a>
+        </div>
+        <!-- メニュー -->
+        <button id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="salmon.html">鮭</a></li>
+                <li><a href="salt.html">塩</a></li>
+                <li><a href="tunamayo.html">ツナマヨ</a></li>
+                <li><a href="kelp.html">昆布</a></li>
+            </ul>
+        </nav>
+
+        <script src="app.js"></script>
+    </body>
 </html>
