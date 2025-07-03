@@ -3,18 +3,81 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/salmon.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>鮭おにぎりの紹介</title>
+    <link rel="stylesheet" href="css/salmon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-    <div><img src="img/salmon_image/onigiri_character_sake.png" alt="鮭おにぎりのアイコン" width="200">
-        <img src="img/salmon_image/salmon_image.png" alt="鮭おにぎりの写真" width="700">
-        <img src="img/salmon_image/fish_sakana_sake.png" alt="鮭おにぎりの具材" width="200">
-    </div>
-    <h1>鮭おにぎりの紹介</h1>
-    <h2></h2>
-    <!--それぞれの具の写真とサイトへのリンクを貼る-->
+    <main class="content-wrapper">
+        <header>
+            <h1>鮭おにぎりの紹介</h1>
+            <p class="intro-text">
+                日本の食卓に欠かせない、シンプルでありながら奥深い味わいの「鮭おにぎり」。<br>
+                その魅力を、たっぷりとご紹介します。
+            </p>
+        </header>
+
+        <section class="gallery">
+            <div class="image-container">
+                <img src="img/salmon_image/onigiri_character_sake.png" alt="おにぎりのキャラクター" class="side-image">
+            </div>
+            
+            <div class="image-container main-image-container">
+                <img src="img/salmon_image/salmon_image.png" alt="鮭おにぎりの写真" class="main-image">
+            </div>
+
+            <div class="image-container">
+                <img src="img/salmon_image/fish_sakana_sake.png" alt="鮭のイラスト" class="side-image">
+            </div>
+        </section>
+
+        <section id="features">
+            <h2 class="section-title">美味しさの3つの理由</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>具材</h3>
+                    <p>- ほどよい塩気と脂のコクが、ご飯の甘みと相性バツグン <br> - 焼いたりほぐしたりすることで香ばしさ＆ほろほろ食感に 
+</p>
+                </div>
+                <div class="feature-item">
+                    <h3>お米</h3>
+                    <p>- 水分をしっかり含んだふっくら炊き上げで、もっちり甘みが感じられる <br> - 粘りで具材を包み込み、一口で一体感を味わえる </p>
+                </div>
+                <div class="feature-item">
+                    <h3>海苔</h3>
+                    <p>- 焼き海苔ならではの香ばしい磯の香りがアクセントに <br> - パリッとした食感で食べ応えをプラス<br>そして手にくっつかない役割も </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipe">
+            <h2 class="section-title">鮭おにぎりの歴史</h2>
+            <ol class="recipe-list">
+                <li>古代〜近世: 「おにぎり」と「塩鮭」は、それぞれが携帯食・保存食として長い歴史を歩んできました。</li>
+                <li>昭和53年 (1978年): セブン-イレブンがおにぎりを発売。初期メンバーとして「鮭」を選んだことで、鮭おにぎりは全国区の定番商品となりました。</li>
+                <li>平成〜現代: 技術革新と商品開発により、鮭おにぎりは多様化し、今なおおにぎりの王座に君臨しています。</li>
+                <p>鮭おにぎりの歴史は、日本の食文化と流通革命が詰まった、まさに「日本のソウルフード」の歴史そのものと言えるでしょう。</p>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>おにぎりを、もっと好きになる。</p>
+            <div class="social-links">
+                <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Onigiri Project. Group 2. All rights reserved.</p>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>

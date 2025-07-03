@@ -1,3 +1,184 @@
-div {
+/* --- 全体のスタイル設定 --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* --- コンテンツ全体のラッパー --- */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* --- ヘッダーとタイトル --- */
+header {
     text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin: 0;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+/* --- メインビジュアル（ギャラリー） --- */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image-container {
+    flex: 3;
+    padding: 0 20px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.03);
+}
+
+.side-image {
+    width: 100%;
+    max-width: 150px;
+    transition: transform 0.3s ease-in-out; /* アニメーションを追加 */
+}
+
+/* ▼▼▼ サイド画像の回転 ▼▼▼ */
+.gallery .image-container:first-child .side-image {
+    transform: rotate(-10deg); /* 左の画像を外側に10度回転 */
+}
+
+.gallery .image-container:last-child .side-image {
+    transform: rotate(10deg);  /* 右の画像を外側に10度回転 */
+}
+
+.gallery .image-container:first-child .side-image:hover {
+    transform: rotate(-15deg) scale(1.05); /* ホバー時にもう少し回転と拡大 */
+}
+
+.gallery .image-container:last-child .side-image:hover {
+    transform: rotate(15deg) scale(1.05);  /* ホバー時にもう少し回転と拡大 */
+}
+/* ▲▲▲ サイド画像の回転 ▲▲▲ */
+
+.gallery img {
+    height: auto;
+}
+
+/* --- 共通のセクションスタイル --- */
+section {
+    padding: 60px 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+/* --- こだわりセクション --- */
+.features-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.feature-item {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #c44536;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* --- 作り方セクション --- */
+.recipe-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+
+.recipe-list li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* --- フッター --- */
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f9a826;
+}
+
+.footer-bottom {
+    background-color: #212529;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #adb5bd;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
