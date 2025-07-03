@@ -82,6 +82,7 @@ body {
     flex: 1;
     text-align: center;
     padding: 100px 0;
+    border: #bbb solid 1px;
 }
 
 .link_card a:hover {
