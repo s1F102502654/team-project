@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8fafc;
+    line-height: 1.6;
 }
 
 .container {
@@ -12,6 +13,12 @@ body {
 
 .title {
     text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title h1 {
+    font-size: 2rem;
+    margin: 8px;
 }
 
 .title p {
@@ -31,7 +38,119 @@ body {
 }
 
 .block img {
-    width: 50%;
+    width: 500px;
     overflow: hidden;
     border-radius: 8px;
+}
+
+.card {
+    background-color: #edf2f7;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 30px 0;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    border-left: 4px solid #3182ce;
+    padding-left: 1rem;
+}
+
+/* ハンバーガーボタンのスタイル */
+#burger {
+    display: grid;
+    position: fixed;
+    border-radius: 7px;
+    top: 2%;
+    left: 2%;
+    z-index: 200;
+    place-items: center;
+    width: 44px;
+    aspect-ratio: 1;
+    border: none;
+    z-index: 200;
+}
+
+/* ボタンにカーソルを合わせた時のスタイル */
+#burger:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* ボタン内の横線作成 */
+#burger span {
+    display: block;
+    background-color: #000;
+    width: 70%;
+    height: 2px;
+    grid-area: 1 / 1 / -1 / -1;
+}
+#burger span:nth-child(1) {
+    transition: opacity 0.4s ease;
+}
+
+#burger span:nth-child(2) {
+    translate: 0 -0.5rem;
+}
+#burger span:nth-child(3) {
+    translate: 0 0.5rem;
+}
+#burger span:nth-child(2),
+#burger span:nth-child(3) {
+    transition: rotate 0.4s ease, translate 0.4s ease;
+}
+
+/* ボタンが押された時のアニメーション */
+#burger.is-active span:nth-child(1) {
+    opacity: 0;
+}
+#burger.is-active span:nth-child(2) {
+    rotate: 45deg;
+    translate: 0 0;
+}
+#burger.is-active span:nth-child(3) {
+    rotate: -45deg;
+    translate: 0 0;
+}
+
+/* メニュー画面 */
+#menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    z-index: 150;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.95);
+    transform: translateY(-100%); /* ボタンが押されていないときは画面外に表示 */
+    transition: transform 0.5s ease;
+}
+
+#menu.is-active {
+    transform: translateY(0);
+}
+
+#menu ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: 0;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+#menu a:hover {
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }

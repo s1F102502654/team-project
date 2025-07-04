@@ -91,7 +91,7 @@ body {
 
 #salmon {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../img/salmon_image/salmon_image.png");
+        url("../salmon/salmon_image.png");
 }
 
 #salt {
