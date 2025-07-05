@@ -1,0 +1,266 @@
+/* 各ページの装飾に使う色を指定 */
+#kelp {
+    --border-color: #3182ce;
+    --background-color: #ebf8ff;
+}
+#salt {
+    --border-color: #3182ce;
+    --background-color: #ebf8ff;
+}
+#salmon {
+    --border-color: #c44536;
+    --background-color: #ffe5e0;
+}
+#tunamayo {
+    --border-color: #3182ce;
+    --background-color: #ebf8ff;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+    color: #1a202c;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.site-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.site-header h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.site-header p {
+    color: #4a5568;
+}
+
+.content-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card-image-wrapper {
+    flex: 1 1 300px;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card-text-content {
+    flex: 2 1 300px;
+}
+
+.card-text-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    border-left: 4px solid var(--border-color);
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.type-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.type-item {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+}
+
+.type-item:hover {
+    transform: scale(1.03);
+}
+
+.type-item h3 {
+    margin-top: 0;
+}
+
+.card-section-highlight {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.section-text p {
+    margin-bottom: 1rem;
+}
+
+.site-footer {
+}
+
+.hidden {
+    display: none;
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 300;
+}
+
+#modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 400;
+    width: 90%;
+    max-width: 500px;
+}
+
+#modal-close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #888;
+}
+#modal-close-btn:hover {
+    color: #000;
+}
+
+/* ハンバーガーボタンのスタイル */
+#burger {
+    display: grid;
+    position: fixed;
+    border-radius: 7px;
+    top: 2%;
+    left: 2%;
+    z-index: 200;
+    place-items: center;
+    width: 44px;
+    aspect-ratio: 1;
+    border: none;
+    z-index: 200;
+}
+
+/* ボタンにカーソルを合わせた時のスタイル */
+#burger:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* ボタン内の横線作成 */
+#burger span {
+    display: block;
+    background-color: #000;
+    width: 70%;
+    height: 2px;
+    grid-area: 1 / 1 / -1 / -1;
+}
+#burger span:nth-child(1) {
+    transition: opacity 0.4s ease;
+}
+
+#burger span:nth-child(2) {
+    translate: 0 -0.5rem;
+}
+#burger span:nth-child(3) {
+    translate: 0 0.5rem;
+}
+#burger span:nth-child(2),
+#burger span:nth-child(3) {
+    transition: rotate 0.4s ease, translate 0.4s ease;
+}
+
+/* ボタンが押された時のアニメーション */
+#burger.is-active span:nth-child(1) {
+    opacity: 0;
+}
+#burger.is-active span:nth-child(2) {
+    rotate: 45deg;
+    translate: 0 0;
+}
+#burger.is-active span:nth-child(3) {
+    rotate: -45deg;
+    translate: 0 0;
+}
+
+/* メニュー画面 */
+#menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    z-index: 150;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.95);
+    transform: translateY(-100%); /* ボタンが押されていないときは画面外に表示 */
+    transition: transform 0.5s ease;
+}
+
+#menu.is-active {
+    transform: translateY(0);
+}
+
+#menu ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: 0;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+#menu a:hover {
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}

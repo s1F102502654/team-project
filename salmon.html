@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鮭おにぎりの紹介</title>
-    <link rel="stylesheet" href="css/salmon.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
-<body>
-    <!-- ハンバーガーメニュー -->
-    <button id="burger" aria-label="メニューを開く">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="salmon.html">鮭おにぎり</a></li>
-            <li><a href="kelp.html">昆布おにぎり</a></li>
-        </ul>
-    </nav>
+    <head id="salmon">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>鮭おにぎりの紹介</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+    </head>
+    <body id="salmon">
+        <div class="container">
+            <header class="site-header">
+                <h1>鮭おにぎりの紹介</h1>
+                <p>
+                    日本の食卓に欠かせない、シンプルでありながら奥深い味わいの「鮭おにぎり」。<br />
+                    その魅力を、たっぷりとご紹介します。
+                </p>
+            </header>
 
-    <div class="container">
-        <header class="site-header">
-            <h1>鮭おにぎりの紹介</h1>
-            <p>日本の食卓に欠かせない、シンプルでありながら奥深い味わいの「鮭おにぎり」。<br>
-            その魅力を、たっぷりとご紹介します。</p>
-        </header>
-
-        <main>
-            <div class="content-card">
+            <main class="content-card">
                 <div class="card-flex-container">
                     <div class="card-image-wrapper">
-                        <img src="img/salmon_image.png" alt="鮭おにぎりの写真" class="main-image">
+                        <img
+                            src="img/salmon_image.png"
+                            alt="鮭おにぎりの写真"
+                            class="main-image"
+                        />
                     </div>
                     <div class="card-text-content">
                         <h2>鮭おにぎりとは？</h2>
-                        <p>ほどよい塩気と脂のコクが、ご飯の甘みと相性バツグン。焼いたりほぐしたりすることで香ばしさ＆ほろほろ食感に。</p>
+                        <p>
+                            ほどよい塩気と脂のコクが、ご飯の甘みと相性バツグン。焼いたりほぐしたりすることで香ばしさ＆ほろほろ食感に。
+                        </p>
                     </div>
                 </div>
 
@@ -46,54 +42,93 @@
                     <div class="type-grid">
                         <div class="type-item">
                             <h3>具材</h3>
-                            <p>ほどよい塩気と脂のコクが、ご飯の甘みと相性バツグン。焼いたりほぐしたりすることで香ばしさ＆ほろほろ食感に。</p>
+                            <p>
+                                ほどよい塩気と脂のコクが、ご飯の甘みと相性バツグン。焼いたりほぐしたりすることで香ばしさ＆ほろほろ食感に。
+                            </p>
                         </div>
                         <div class="type-item">
                             <h3>お米</h3>
-                            <p>水分をしっかり含んだふっくら炊き上げで、もっちり甘みが感じられる。粘りで具材を包み込み、一口で一体感を味わえる。</p>
+                            <p>
+                                水分をしっかり含んだふっくら炊き上げで、もっちり甘みが感じられる。粘りで具材を包み込み、一口で一体感を味わえる。
+                            </p>
                         </div>
                         <div class="type-item">
                             <h3>海苔</h3>
-                            <p>焼き海苔ならではの香ばしい磯の香りがアクセントに。パリッとした食感で食べ応えをプラス。そして手にくっつかない役割も。</p>
+                            <p>
+                                焼き海苔ならではの香ばしい磯の香りがアクセントに。パリッとした食感で食べ応えをプラス。そして手にくっつかない役割も。
+                            </p>
                         </div>
                     </div>
                 </section>
 
-                <section class="card-section-highlight">
+                <section class="card-section-highlight type-item">
                     <h2 class="section-title">鮭おにぎりの歴史</h2>
-                    <div class="nutrition-content">
-                        <p>古代〜近世: 「おにぎり」と「塩鮭」は、それぞれが携帯食・保存食として長い歴史を歩んできました。</p>
-                        <p>昭和53年 (1978年): セブン-イレブンがおにぎりを発売。初期メンバーとして「鮭」を選んだことで、鮭おにぎりは全国区の定番商品となりました。</p>
-                        <p>平成〜現代: 技術革新と商品開発により、鮭おにぎりは多様化し、今なおおにぎりの王座に君臨しています。</p>
-                        <p>鮭おにぎりの歴史は、日本の食文化と流通革命が詰まった、まさに「日本のソウルフード」の歴史そのものと言えるでしょう。</p>
+                    <div class="section-text">
+                        <p>
+                            古代〜近世:
+                            「おにぎり」と「塩鮭」は、それぞれが携帯食・保存食として長い歴史を歩んできました。
+                        </p>
+                        <p>
+                            昭和53年 (1978年):
+                            セブン-イレブンがおにぎりを発売。初期メンバーとして「鮭」を選んだことで、鮭おにぎりは全国区の定番商品となりました。
+                        </p>
+                        <p>
+                            平成〜現代:
+                            技術革新と商品開発により、鮭おにぎりは多様化し、今なおおにぎりの王座に君臨しています。
+                        </p>
+                        <p>
+                            鮭おにぎりの歴史は、日本の食文化と流通革命が詰まった、まさに「日本のソウルフード」の歴史そのものと言えるでしょう。
+                        </p>
                     </div>
                 </section>
-            </div>
-        </main>
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <p>おにぎりを、もっと好きになる。</p>
-            <div class="social-links">
-                <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            </div>
+            </main>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Onigiri Project. Group 2. All rights reserved.</p>
-        </div>
-    </footer>
 
-    <script>
-        // ハンバーガーメニューの動作
-        const burger = document.getElementById('burger');
-        const menu = document.getElementById('menu');
-        burger.addEventListener('click', () => {
-            burger.classList.toggle('is-active');
-            menu.classList.toggle('is-active');
-        });
-    </script>
-</body>
+        <!-- モーダル -->
+        <div id="modal-overlay" class="hidden"></div>
+        <div id="modal-window" class="hidden">
+            <button id="modal-close-btn">&times;</button>
+            <div id="modal-content"></div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>おにぎりを、もっと好きになる。</p>
+                <div class="social-links">
+                    <a href="#" aria-label="X"
+                        ><i class="fab fa-x-twitter"></i
+                    ></a>
+                    <a href="#" aria-label="Instagram"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="#" aria-label="Facebook"
+                        ><i class="fab fa-facebook-f"></i
+                    ></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2025 Onigiri Project. Group 2. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <!-- メニュー -->
+        <button id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="salmon.html">鮭</a></li>
+                <li><a href="salt.html">塩</a></li>
+                <li><a href="tunamayo.html">ツナマヨ</a></li>
+                <li><a href="kelp.html">昆布</a></li>
+            </ul>
+        </nav>
+
+        <script src="app.js"></script>
+    </body>
 </html>

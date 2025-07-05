@@ -2,42 +2,59 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="css/salt.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
         <title>塩</title>
     </head>
-    <body>
+    <body id="salt">
         <div class="container">
-            <div class="title">
+            <header class="site-header">
                 <h1>塩にぎり</h1>
                 <p>～実は具材なんていらない～</p>
-            </div>
-            <div class="content">
-                <div class="block">
-                    <img
-                        src="img/salt3.png"
-                        alt="おにぎりに塩を振りかける画像"
-                    />
-                    <p>
-                        鮭、昆布、ツナマヨ、この世のありとあらゆる具材を凌駕するもの。それが塩です。
-                    </p>
+            </header>
+            <main class="content-card">
+                <div class="card-flex-container">
+                    <div class="card-image-wrapper">
+                        <img
+                            src="img/salt3.png"
+                            alt="おにぎりに塩を振りかける画像"
+                        />
+                    </div>
+                    <div class="card-text-content">
+                        <p>
+                            鮭、昆布、ツナマヨ、この世のありとあらゆる具材を凌駕するもの。それが塩です。
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h2>味わおう。お米本来のおいしさを。</h2>
-                    <p>
-                        具材の味に頼ることなく塩だけで勝負する塩にぎりはお米そのものの甘み、香り、食感を最も純粋に楽しむことができます。
-                        炊き加減、お米の銘柄、そして握り手の塩加減という繊細な要素がダイレクトに伝わるため、まさに「ごまかしのきかない究極のおにぎり」と言えるでしょう。
-                        良質なお米でつくられた塩にぎりは、どんな豪華な具材入りおにぎりにも勝る、深い味わいがあります。
-                    </p>
-                </div>
-                <div class="card">
-                    <h2>シンプルゆえの可能性</h2>
-                    <p>
-                        塩にぎりは最高の脇役にもなります。具材の味が決まっていないためどんなおかずとも絶妙にマッチし、食卓の可能性を無限に広げてくれます。
-                        シンプルゆえに飽きが来ず、場所や時間、一緒に食べるものを選ばない究極の万能性を誇ります。
-                    </p>
-                </div>
-            </div>
+                <section class="card-section-highlight type-item">
+                    <h2 class="section-title">
+                        味わおう。お米本来のおいしさを。
+                    </h2>
+                    <div class="section-text">
+                        <p>
+                            具材の味に頼ることなく塩だけで勝負する塩にぎりはお米そのものの甘み、香り、食感を最も純粋に楽しむことができます。
+                            炊き加減、お米の銘柄、そして握り手の塩加減という繊細な要素がダイレクトに伝わるため、まさに「ごまかしのきかない究極のおにぎり」と言えるでしょう。
+                            良質なお米でつくられた塩にぎりは、どんな豪華な具材入りおにぎりにも勝る、深い味わいがあります。
+                        </p>
+                    </div>
+                </section>
+                <section class="card-section-highlight type-item">
+                    <h2 class="section-title">シンプルゆえの可能性</h2>
+                    <div class="section-text">
+                        <p>
+                            塩にぎりは最高の脇役にもなります。具材の味が決まっていないためどんなおかずとも絶妙にマッチし、食卓の可能性を無限に広げてくれます。
+                            シンプルゆえに飽きが来ず、場所や時間、一緒に食べるものを選ばない究極の万能性を誇ります。
+                        </p>
+                    </div>
+                </section>
+            </main>
         </div>
+        <!-- モーダル -->
+        <div id="modal-overlay" class="hidden"></div>
+        <div id="modal-window" class="hidden">
+            <button id="modal-close-btn">&times;</button>
+            <div id="modal-content"></div>
+        </div>
+
         <!-- メニュー -->
         <button id="burger">
             <span></span>
